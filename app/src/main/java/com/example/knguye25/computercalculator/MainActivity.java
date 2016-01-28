@@ -1,5 +1,8 @@
 package com.example.knguye25.computercalculator;
-
+/*
+* Assignment: HW1
+* FileName Group12_HW01.zip
+* Team: Khanh Nguyen, Kettyl Amoakon, Vaibhav Sapkal*/
 import android.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Log.d("demoSeekBar", "value=" + sb.getProgress());
+//                Log.d("demoSeekBar", "value=" + sb.getProgress());
                 tipPercent = sb.getProgress() * 5;
             }
         });
