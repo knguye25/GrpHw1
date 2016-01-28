@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Computer Calculator</string>
+    <string name="BudgetLbl">Budget ($) </string>
+
+    <string name="MemoryLbl">Memory </string>
+    <string name="Memory2GBLbl">2GB </string>
+    <string name="Memory4GBLbl">4GB </string>
+    <string name="Memory8GBLbl">8GB </string>
+    <string name="Memory16GBLbl">16GB </string>
+
+    <string name="StorageLbl">Storage </string>
+    <string name="Storage250GBLbl">250GB</string>
+    <string name="Storage500GBLbl">500GB</string>
+    <string name="Storage750GBLbl">750GB</string>
+    <string name="Storage1TBLbl">1TB</string>
+
+    <string name="AccessoriesLbl">Accessories </string>
+    <string name="MouseLbl">Mouse </string>
+    <string name="FlashDriveLbl">FlashDrive </string>
+    <string name="CoolingPadLbl">Cooling Pad </string>
+    <string name="CarryingCaseLbl">Carrying Case </string>
+
+    <string name="TipLbl">Tip % </string>
+    <string name="DeliveryLbl">Delivery </string>
+
+    <string name="CalculateBtnLbl">Calculate</string>
+    <string name="ResetBtnLbl">Reset</string>
+
+    <string name="PriceLbl">Price: $</string>
+    <string name="YourStatusLbl">Your Status: </string>
+
+    <string name="EnterAmntHnt">Enter dollar amount</string>
+    <string name="OnSwtLbl">ON</string>
+    <string name="OffSwtLbl">OFF</string>
+
+    <string name="defaultTipAmount">15%</string>
+    <string name="inBudgetDisp">Within budget</string>
+    <string name="notInBudgetDisp">Over budget</string>
+
+</resources>

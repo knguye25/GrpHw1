@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.knguye25.computercalculator.MainActivity"
+    android:weightSum="1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/BudgetLbl"
+            android:id="@+id/BudgetLbl" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:ems="9"
+            android:id="@+id/BudgetDisp"
+            android:hint="@string/EnterAmntHnt"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/MemoryRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/MemoryLbl"
+            android:id="@+id/textView"
+            android:layout_gravity="center_vertical" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/MemorySzRdGrp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:checked="true"
+                android:text="@string/Memory2GBLbl"
+                android:id="@+id/Mem2GBRdBtn" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:text="@string/Memory4GBLbl"
+                android:id="@+id/Mem4GBRdBtn" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:text="@string/Memory8GBLbl"
+                android:id="@+id/Mem8GBRdBtn" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:text="@string/Memory16GBLbl"
+                android:id="@+id/Mem16GBRdBtn" />
+
+        </RadioGroup>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/StorageRow" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/StorageLbl"
+            android:id="@+id/StorageLbl"
+            android:layout_gravity="center_vertical" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/StorageSzRdGrp" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/Storage250GBLbl"
+                android:id="@+id/GB250" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Storage500GBLbl"
+                android:id="@+id/GB500" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Storage750GBLbl"
+                android:id="@+id/GB750" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5px"
+                android:text="@string/Storage1TBLbl"
+                android:id="@+id/TB1" />
+        </RadioGroup>
+    </TableRow>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:id="@+id/AccesoriesGrd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/AccessoriesLbl"
+            android:id="@+id/accLbl"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MouseLbl"
+            android:id="@+id/mouseChBx"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FlashDriveLbl"
+            android:id="@+id/flashChBx"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CoolingPadLbl"
+            android:id="@+id/coolChBx"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CarryingCaseLbl"
+            android:id="@+id/carryingCaseChBx"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+    </GridLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:text="@string/TipLbl"/>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="5"
+            android:id="@+id/tipSkBr"
+            android:progress="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:id="@+id/TipDisp"
+            android:text="@string/defaultTipAmount" />
+    </TableRow>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:text="@string/DeliveryLbl"
+        android:id="@+id/DeliverySwt"
+        android:switchPadding="20dp"
+        android:checked="true"
+        android:showText="true"
+        android:textOn="@string/OnSwtLbl"
+        android:textOff="@string/OffSwtLbl" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/CalculateBtnLbl"
+            android:id="@+id/calculateBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ResetBtnLbl"
+            android:id="@+id/resetBtn" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:text="@string/PriceLbl"
+        android:id="@+id/priceDisp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/YourStatusLbl"
+            android:id="@+id/StatusLbl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Remove me"
+            android:id="@+id/StatusDisp" />
+
+    </TableRow>
+
+</LinearLayout>
